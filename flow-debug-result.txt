@@ -1,0 +1,32 @@
+How the Interview Started
+This flow was triggered as if the opportunity record was created.
+This debug run was triggered as if the opportunity record was created.
+Wanderson Silva (005aj00000MtOsN) started the flow interview.
+API Version for Running the Flow: 65
+Some of this flow's variables were set when the interview started.
+$Record = Opportunity (006aj00000KsAJpAAN)
+Flow start time: 9 de novembro de 2025 às 19:00.
+Start Condition Requirements
+The triggering record met the start conditions.
+The triggering record met the condition requirements.
+Entry Conditions
+null
+Decision: Should Process
+"Proceed" outcome was executed.
+Outcome executed: Proceed
+Outcome conditions
+{!$Record.StageName} (Closed Won) Equals Closed Won
+One condition must be true (OR)
+Create Records: Create Project
+One or more Project__c records are ready to be created.
+Create one Project__c record where
+Name = {!$Record.Name} (NewOpp_8)
+Opportunity__c = {!$Record.Id} (006aj00000KsAJpAAN)
+OwnerId = {!$Record.OwnerId} (005aj00000MtOsNAAV)
+Result
+A record is ready to be created when the next screen, pause, or local action is executed or when the interview finishes.
+a02aj00000LAbU2AAL
+Rollback
+Because the flow ran in rollback mode, any changes to add, delete, or modify records were rolled back.
+How the Interview Finished
+The flow interview ran for 1.12 seconds and finished on 9 de novembro de 2025 at 19:00.
